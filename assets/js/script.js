@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function iniciarScrollReveal() {
         if (typeof ScrollReveal !== "undefined") {
-            ScrollReveal().reveal(" .content, .featured-news, .headline-container, .headline-card, .headline-content, .read-more-btn, .hidden, .search-results-title, .news-section, .news-card, .news-image, .news-card-content, .section-title, .footer, .footer-container, .footer-section, .footer-links, .newsletter-form, .newsletter-btn, .social-icons, .footer-bottom, .loading-overlay, .loading-spinner, .info-sidebar, .sidebar-toggle, .sidebar-icon, .sidebar-content, .sidebar-header, .sidebar-close, .sidebar-section, #searchResultsContainer, #searchResultsTitle, #searchResults, #allNews, #currentYear, #loadingOverlay, .conteiner-sobre, .dobra-1-topo, .logo-conexao, .txt-dobra-1, .tittle-dobra-1-esquerda, .tittle-dobra-1-direita, .wrapper-text, .img-dobra-1-direita, .txt-dobra-1-direita, .btn-custom, .btn-text-wrap, .btn-arrow, .conteudo, .indice, .list-card, .left-card, .right-card, .equipe, .text-banner, .logo-container, .item-linha-do-tempo, .item, .list-item, .card-impacto", {
+            ScrollReveal().reveal(" .content, .featured-news, .headline-container, .headline-card, .headline-content, .read-more-btn, .hidden, .search-results-title, .news-section, .news-card, .news-image, .news-card-content, .section-title, .footer-container, .footer-section, .footer-links, .newsletter-form, .newsletter-btn, .social-icons, .footer-bottom, .loading-overlay, .loading-spinner, .info-sidebar, .sidebar-toggle, .sidebar-icon, .sidebar-content, .sidebar-header, .sidebar-close, .sidebar-section, #searchResultsContainer, #searchResultsTitle, #searchResults, #allNews, #currentYear, #loadingOverlay, .conteiner-sobre, .dobra-1-topo, .logo-conexao, .txt-dobra-1, .tittle-dobra-1-esquerda, .tittle-dobra-1-direita, .wrapper-text, .img-dobra-1-direita, .txt-dobra-1-direita, .btn-custom, .btn-text-wrap, .btn-arrow, .conteudo, .indice, .card-item, .left-card, .right-card, .text-banner, .logo-container, .list-item", {
                 duration: 1200,
                 origin: "bottom",
                 distance: "20px",
@@ -360,4 +360,12 @@ document.addEventListener('DOMContentLoaded', function () {
     initialize();
 });
 
+// Adiciona personalização aos cards da página sobre 
+const cards = document.querySelectorAll(".card-item");
 
+cards.forEach(card => {
+  card.addEventListener("click", () => {
+      console.log("clicou");
+      card.classList.toggle("active");
+  });
+});
