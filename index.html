@@ -9,7 +9,7 @@
     
     <!-- Scripts JavaScript -->
     <script defer src="assets/js/script.js"></script>
-    <script defer src="assets/js/galeia.js"></script>
+    <script defer src="assets/js/galeria.js"></script>
     
     <!-- Título da Página -->
     <title>Nova Gazeta Marista | Notícias da Escola</title>
@@ -76,9 +76,9 @@
     
     <nav class="navbar">
         <div class="nav-container">
+          
             <!-- Menu Desktop -->
             <div class="menu-container">
-                <button class="nav-arrow nav-arrow-left" aria-label="Scroll menu left">&#10094;</button>
                 <ul class="menu">
                     <li><a href="paginas/saude.html">Saúde</a></li>
                     <li><a href="paginas/entretenimento.html">Entretenimento</a></li>
@@ -89,7 +89,7 @@
                     <li><a href="paginas/recomendados.html">Notícias Passadas</a></li>
                     <li><a href="paginas/sobre.html">Sobre o Projeto</a></li>
                 </ul>
-                <button class="nav-arrow nav-arrow-right" aria-label="Scroll menu right">&#10095;</button>
+                
             </div>
 
             <!-- Barra de Pesquisa -->
@@ -160,8 +160,8 @@
                     <img src="assets/img/artigos/news-24.jpeg"
                         alt="Mala peregrina chega à nossa escola na celebração dos 20 anos da PJM">
                     <div class="headline-content">
-                        <h2>No dia 12 de maio, nossa escola recebeu com alegria a mala peregrina, símbolo itinerante</h2>
-                        <p>da comemoração pelos 20 anos da Pastoral Juvenil Marista (PJM). A mala veio da </p>
+                        <h2> Mala peregrina chega à nossa escola na celebração dos 20 anos da PJM </h2>
+                        <p>No dia 12 de maio, nossa escola recebeu com alegria a mala peregrina, símbolo itinerante da comemoração pelos 20 anos da Pastoral Juvenil Marista (PJM) </p>
                         <a href="assets/postis/vida13.html" class="read-more-btn">Ler mais</a>
                     </div>
                 </article>
@@ -187,6 +187,33 @@
             
             <!-- Grid de Notícias -->
             <div class="news-section">
+                <article class="news-card" data-keywords="Mariana: a mente por trás da celebração esportiva nos Jogos Escolares Marista">
+                    <img src="../assets/img/artigos/isabelly.jpeg"
+                        alt="Imagem de Mariana: a mente por trás da celebração esportiva nos Jogos Escolares Marista"
+                        class="news-image">
+                    <div class="news-card-content">
+                        <h3>Isabelly Andrade Representa Escolas Sociais na Comissão Província Regional</h3>
+                        <p>
+                            A estudante Isabelly Andrade, do 1º ano do Marista Escola Social Irmão Acácio, venceu uma votação em Curitiba e conquistou a cadeira feminina da Comissão Província Regional, tornando-se representante das escolas sociais da região. Ela compartilhou sua experiência em entrevista à redação.
+
+                        </p>
+                        <a href="../assets/postis/entrevista11.html" class="read-more-btn">Continuar lendo</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-keywords="Mariana: a mente por trás da celebração esportiva nos Jogos Escolares Marista">
+                    <img src="../assets/img/artigos/RPG.jpg"
+                        alt="Imagem de Mariana: a mente por trás da celebração esportiva nos Jogos Escolares Marista"
+                        class="news-image">
+                    <div class="news-card-content">
+                        <h3>Estudantes do 1º Ano Mergulham no Trovadorismo com RPG Literário</h3>
+                        <p>
+                            As turmas do 1º ano do Ensino Médio vivem uma experiência única: aprender Trovadorismo por meio da criação de um RPG de tabuleiro. A iniciativa, conduzida pela professora de Língua Portuguesa Carla Ravaneda, transforma a escola literária medieval em um jogo cheio de enredos, cartas, personagens e muita imaginação.
+                        </p>
+                        <a href="../assets/postis/entrevista10.html" class="read-more-btn">Continuar lendo</a>
+                    </div>
+                </article>
+                
                 <article class="news-card" data-keywords="Homem com H – Ney Matogrosso e a liberdade de ser">
                     <img src="assets/img/artigos/Homem com H.jpg"
                         alt="Imagem Homem com H – Ney Matogrosso e a liberdade de ser" class="news-image">
@@ -239,7 +266,7 @@
             <section class="footer-section">
                 <h3>Projeto Conexão</h3>
                 <p>O Projeto Conexão é uma iniciativa que une informação, criatividade e colaboração. Aqui, nossos alunos se tornam jornalistas, apresentadores e criadores de conteúdo, transformando suas vozes em notícias que importam.</p>
-                <button type="submit" class="newsletter-btn">leia mais sobre</button>
+                     <a href="sobre.html" class="read-more-btn">ler mais sobre </a>
             </section>
 
             <!-- Links Rápidos -->
@@ -257,7 +284,7 @@
             <section class="footer-section">
                 <h3>Conecte-se</h3>
                 <div class="social-icons">
-                    <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-inst    agram"></i></a>
+                    <a href="https://www.instagram.com/maristairacacio/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="https://youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </section>
@@ -271,47 +298,6 @@
 
     <div id="loadingOverlay" class="loading-overlay">
         <div class="loading-spinner"></div>
-    </div>
-
-    <!-- Barra Lateral Informativa -->
-    <div class="info-sidebar">
-        <button class="sidebar-toggle" aria-label="Abrir informações da equipe">
-            <img src="assets/img/decorativos/barra-lateral.png" alt="Ícone da equipe" class="sidebar-icon">
-        </button>
-        <div class="sidebar-content">
-            <div class="sidebar-header">
-                <h3>Equipe Responsável</h3>
-                <button class="sidebar-close" aria-label="Fechar barra lateral">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-
-            <div class="sidebar-section">
-                <h4><i class="fas fa-chalkboard-teacher"></i> Professores Responsáveis</h4>
-                <ul>
-                    <li>Prof. Carla Maria do Carmo Ravaneda de Antonio</li>
-                    <li>Prof. Heloisa Souza Barbosa</li>
-                    <li>Prof. Symon Pereira de Morais</li>
-                </ul>
-            </div>
-
-            <div class="sidebar-section">
-                <h4><i class="fas fa-code"></i> Equipe de Programação</h4>
-                <ul>
-                    <li>Felipe da Silva Gonçalves</li>
-                    <li>Samuel Lima Do Amaral</li>
-                    <li>Chrystian de Almeida Silva</li>
-                    <li>Emanuel Pereira da Silva</li>
-                    <li>Alexandre Mario Costa Gurgel</li>
-                    <li>Heitor Oliveira Almeida</li>
-                </ul>
-            </div>
-
-            <div class="sidebar-section">
-                <h4><i class="fas fa-info-circle"></i> Sobre o Projeto</h4>
-                <p>Somos a equipe responsável pelo site da Gazeta Marista. Cuidamos da seleção, edição e publicação de todo o conteúdo que você vê por aqui. Com a orientação dos professores.</p>
-            </div>
-        </div>
     </div>
 </body>
 </html>
